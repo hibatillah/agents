@@ -2,6 +2,25 @@
 
 Agent skills by [hibatillah](https://github.com/hibatillah)
 
+## Install
+
+### Claude Code plugin (recommended)
+
+Installs everything in this repo as one plugin, including future commands, subagents, and hooks. Updates come with one command.
+
+```bash
+/plugin marketplace add hibatillah/skills
+/plugin install hibatillah-skills --marketplace hibatillah/skills
+
+# Update later
+/plugin marketplace update hibatillah-skills
+/reload-plugins
+```
+
+### Generic skills only
+
+For other agents, or to pick individual skills. This installs skills only, not commands or subagents.
+
 ```bash
 # Select skills interactively
 npx skills add hibatillah/skills
@@ -16,6 +35,9 @@ npx skills add hibatillah/skills
 ## Structure
 
 ```text
+.claude-plugin/
+├── plugin.json        plugin manifest
+└── marketplace.json   marketplace listing
 skills/hibatillah-tone/
 ├── SKILL.md         scope, language choice, rules shared by both languages
 ├── en.md            English rules
