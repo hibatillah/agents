@@ -11,6 +11,7 @@ Everything written for someone else to read uses one register: portfolio, blog, 
 - Written words, not chat words: "tidak" (not "gak"), "sudah" (not "udah"), "saja" (not "aja"), "bakal" only in a quote. No chat fillers ("sih", "deh", "lah", "kan") except one now and then when a sentence needs them.
 - Drop the subject when it is clear: "jadi coba cari lagi, dan ketemu".
 - English stays inside the sentence for technical terms and fixed phrases ("wrap up", "most of the time", "heavily depends on"), and English verbs for work he did ("aku deploy semuanya", "list seluruh command", "fix").
+- A common Indonesian word used as a software term stays English: "writer" and "reader" for threads or processes, "lock", "transaction", "row", "timeout", "retry", "backoff". Do not translate it even when an Indonesian word exists ("penulis", "pembaca", "kunci", "baris", "jeda"). This rule comes from his correction of a draft, not from a pattern found in his samples.
 
 ## Spelling
 
@@ -40,4 +41,4 @@ Everything written for someone else to read uses one register: portfolio, blog, 
 
 - Academic words as a default: "merupakan", "memiliki", "melakukan", stacked passives. Formal academic text is template-driven, so it is not evidence of his voice.
 - Promotional words, em dashes, emoji.
-- Translating technical terms he keeps in English.
+- Translating technical terms he keeps in English, including ordinary words that act as terms (writer, reader, lock, transaction, row).

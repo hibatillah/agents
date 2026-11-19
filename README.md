@@ -1,19 +1,19 @@
-# Skills
+# Agents
 
-Agent skills by [hibatillah](https://github.com/hibatillah)
+Agent skills and tooling by [hibatillah](https://github.com/hibatillah). Skills and commands are available now; subagents and hooks will follow.
 
 ## Install
 
 ### Claude Code plugin (recommended)
 
-Installs everything in this repo as one plugin, including future commands, subagents, and hooks. Updates come with one command.
+Installs everything in this repo as one plugin, including future subagents and hooks. Updates come with one command.
 
 ```bash
-/plugin marketplace add hibatillah/skills
-/plugin install hibatillah-skills --marketplace hibatillah/skills
+/plugin marketplace add hibatillah/agents
+/plugin install hibatillah@hibatillah-agents
 
 # Update later
-/plugin marketplace update hibatillah-skills
+/plugin marketplace update hibatillah-agents
 /reload-plugins
 ```
 
@@ -23,14 +23,20 @@ For other agents, or to pick individual skills. This installs skills only, not c
 
 ```bash
 # Select skills interactively
-npx skills add hibatillah/skills
+npx skills add hibatillah/agents
 ```
 
 ## Available skills
 
-| Skill | What it's for |
-|---|---|
-| `hibatillah-tone` | Write and rewrite prose in Hibatillah's voice, in English by default or Indonesian on request. Keeps the facts, and adds no motives, results, or promises that were not given. |
+| Skill  | What it's for                                                                                                                                                                  |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `tone` | Write and rewrite prose in Hibatillah's voice, in English by default or Indonesian on request. Keeps the facts, and adds no motives, results, or promises that were not given. |
+
+## Available commands
+
+| Command                      | What it's for                                                                                                                       |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `/hibatillah:docker-cleanup` | Windows only. Prune Docker build cache, then compact the Docker Desktop (WSL2) VHDX so freed disk space returns to Windows. |
 
 ## Structure
 
@@ -38,7 +44,11 @@ npx skills add hibatillah/skills
 .claude-plugin/
 ├── plugin.json        plugin manifest
 └── marketplace.json   marketplace listing
-skills/hibatillah-tone/
+commands/
+└── docker-cleanup.md  /hibatillah:docker-cleanup
+scripts/
+└── docker-reclaim.ps1 VHDX compact helper, called by docker-cleanup
+skills/tone/
 ├── SKILL.md         scope, language choice, rules shared by both languages
 ├── en.md            English rules
 ├── id.md            Indonesian rules

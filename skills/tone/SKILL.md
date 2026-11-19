@@ -1,5 +1,5 @@
 ---
-name: hibatillah-tone
+name: tone
 description: "Use when writing or rewriting any prose that should sound like Hibatillah, in English or Indonesian: explanations, stories, reports, updates, descriptions, summaries, captions, or any request to write in his voice or make text sound like him. Examples: portfolio blog posts and project pages, daily reports, how-it-started and decision write-ups. Not for code or text where a fixed format is the point (commit messages, UI labels, config); the format wins there and the tone only applies to the prose inside it."
 ---
 

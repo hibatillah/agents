@@ -33,3 +33,4 @@ Read this only when you need to calibrate the Indonesian voice or log a correcti
   - Dropped the technical cause of a bug that was already fixed, keeping only the fix.
   - Dropped work about the style of the documents themselves.
   - Dropped the "Progress" section. Next steps were listed, so this is his choice for that report, not a rule yet.
+- A daily report. He asked that technical terms stay English when the Indonesian word is a normal word with another meaning, for example "writer" and "reader" for database threads instead of "penulis" and "pembaca". Pattern: if a word names a software role or object, keep the English term.

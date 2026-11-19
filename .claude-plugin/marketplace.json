@@ -1,11 +1,11 @@
 {
-  "name": "hibatillah-skills",
+  "name": "hibatillah-agents",
   "owner": { "name": "hibatillah" },
   "plugins": [
     {
-      "name": "hibatillah-skills",
+      "name": "hibatillah",
       "source": "./",
-      "description": "Personal agent skills"
+      "description": "Personal agent skills and tooling"
     }
   ]
 }
